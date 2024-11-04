@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"text/template"
 	"time"
-
 	"github.com/sendgrid/sendgrid-go"
 	"github.com/sendgrid/sendgrid-go/helpers/mail"
 )
