@@ -48,8 +48,9 @@ func (fq PaginatedFeedQuery) Parse(r *http.Request) (PaginatedFeedQuery, error) 
 	tags := qs.Get("tags")
 	if tags != "" {
 		fq.Tags = strings.Split(tags, ",")
+	} else {
+		fq.Tags = []string{}
 	}
-
 	search := qs.Get("search")
 	if search != "" {
 		fq.Search = search
