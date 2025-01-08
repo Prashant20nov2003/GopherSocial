@@ -15,6 +15,7 @@ import (
 	"github.com/go-chi/chi/v5/middleware"
 	"github.com/go-chi/cors"
 	"go.uber.org/zap"
+
 	"github.com/Prashant20nov2003/social/docs" // This is required to generate swagger docs
 	"github.com/Prashant20nov2003/social/internal/auth"
 	"github.com/Prashant20nov2003/social/internal/env"
@@ -72,8 +73,13 @@ type basicConfig struct {
 
 type mailConfig struct {
 	sendGrid  sendGridConfig
+	mailTrap  mailTrapConfig
 	fromEmail string
 	exp       time.Duration
+}
+
+type mailTrapConfig struct {
+	apiKey string
 }
 
 type sendGridConfig struct {

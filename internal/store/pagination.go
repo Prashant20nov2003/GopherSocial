@@ -51,6 +51,7 @@ func (fq PaginatedFeedQuery) Parse(r *http.Request) (PaginatedFeedQuery, error) 
 	} else {
 		fq.Tags = []string{}
 	}
+
 	search := qs.Get("search")
 	if search != "" {
 		fq.Search = search

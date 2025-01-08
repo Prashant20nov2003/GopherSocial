@@ -50,6 +50,8 @@ Use `.envrc` to set up environment variables. Here’s an example:
 export ADDR=":8080"
 export DB_ADDR="postgres://admin:adminpassword@localhost/socialnetwork?sslmode=disable"
 export SENDGRID_API_KEY="your_sendgrid_api_key"
+or 
+export MAILTRAP_API_KEY="your_mailtrap_api_key"
 export AUTH_TOKEN_SECRET="your_auth_token_secret"
 export FROM_EMAIL="your_email@example.com"
 ```
